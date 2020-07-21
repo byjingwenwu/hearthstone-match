@@ -1,0 +1,379 @@
+body {
+  background-image: url(../images/hearthstone-card-art--wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+.gameContainer {
+  padding-top: 30px;
+  width: 100%;
+  max-width: 1600px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+}
+
+.col-mid {
+  width: 8%;
+}
+
+.col-hard {
+  width: 8%;
+}
+
+.col-2 {
+  width: 16%;
+}
+.col-10 {
+  width: 80%;
+}
+
+.rowHeader > header {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+.rowGame{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2%;
+}
+
+aside.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.asideElement {
+  height: calc(100% / 8);
+  width: 80%;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #1EBABA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restart-button-position {
+  position: relative;
+}
+
+.button-frame-middle {
+  height: 60px;
+  margin:0px 24px;
+  display: flex;
+  align-items: center;
+  background: url(../images/woodframe_button_bg_mid.png) repeat-x transparent;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.button-frame::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  width: 95px;
+  height: 60px;
+  background: url(../images/woodframe_button_bg_left.png) no-repeat transparent;
+  background-size: 100% 100%;
+}
+
+.button-frame::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  top: 0;
+  width: 95px;
+  height: 60px;
+  background: url(../images/woodframe_button_bg_right.png) no-repeat transparent;
+  background-size: 100% 100%;
+}
+
+.button-dec-item {
+  backface-visibility: hidden;
+  position: absolute;
+  left: -70%;
+  width: 90px;
+  height: 110px;
+  z-index: 2;
+}
+
+.ashesCardpack {
+  height: 100%;
+  width: 100%;
+}
+
+.button-item {
+  width: 100px;
+  height: 20px;
+  z-index: 1;
+}
+
+main.col-10 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+main.col-10 > div.col-2 {
+  height: 32%;
+  flex-basis: 15%;
+  position: relative;
+}
+
+main.col-10 > div.col-mid {
+  height: 24%;
+  flex-basis: 12%;
+  position: relative;
+}
+
+main.col-10 > div.col-hard {
+  height: 15%;
+  flex-basis: 2;
+  position: relative;
+}
+
+.flip {
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  transform: rotateY(180deg);
+}
+
+.back-1 {
+  background-image: url(../images/back/B1.gif);
+}
+
+.back-2 {
+  background-image: url(../images/back/B2.gif);
+}
+
+.back-3 {
+  background-image: url(../images/back/B3.gif);
+}
+
+.back-4 {
+  background-image: url(../images/back/B4.gif);
+}
+
+.back-5 {
+  background-image: url(../images/back/B5.gif);
+}
+
+.back-6 {
+  background-image: url(../images/back/B6.gif);
+}
+
+.back-7 {
+  background-image: url(../images/back/B7.gif);
+}
+
+.back-8 {
+  background-image: url(../images/back/B8.gif);
+}
+
+.back-9 {
+  background-image: url(../images/back/B9.gif);
+}
+
+.back-10 {
+  background-image: url(../images/back/B10.gif);
+}
+
+.back-11 {
+  background-image: url(../images/back/B11.gif);
+}
+
+.back-12 {
+  background-image: url(../images/back/B12.gif);
+}
+
+.back-13 {
+  background-image: url(../images/back/B13.gif);
+}
+
+.back-14 {
+  background-image: url(../images/back/B14.gif);
+}
+
+.back-15 {
+  background-image: url(../images/back/B15.gif);
+}
+
+.back-16 {
+  background-image: url(../images/back/B16.gif);
+}
+
+.back-17 {
+  background-image: url(../images/back/B17.gif);
+}
+
+.back-18 {
+  background-image: url(../images/back/B18.gif);
+}
+
+.back-19 {
+  background-image: url(../images/back/B19.gif);
+}
+
+.back-20 {
+  background-image: url(../images/back/B20.gif);
+}
+
+.card-front {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-front-flip {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card-front-over {
+  backface-visibility: hidden;
+}
+
+.card-back {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-back-flip {
+  backface-visibility: hidden;
+}
+
+.card-back-over {
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+
+div.card-back:hover {
+  transition: transform 2s;
+  transform: scale(1.05);
+}
+
+
+.modal-overlay, .modalStartOverlay,.level-overlay {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.modalStartOverlay {
+  background-image: url(../images/background.png);
+  background-repeat: repeat;
+}
+
+#titleBand {
+  height: 300px;
+  width: 100%;
+  background-color: #1b2f4c;
+  border-top: 15px solid #f1b35c;
+  border-bottom: 15px solid #f1b35c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: inset -10px 0px 100px 10px rgba(255,255,255,0.20);
+}
+
+#gameLevelButton, #congratsButton, #newLevelButton {
+  display: flex;
+  justify-content: center;
+}
+
+#gameLevelButton > button, #congratsButton > button, #newLevelButton > button {
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background-color: #dab9a0;
+  border-radius: 20px;
+  border: 5px solid #ecd370;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  color: #413120;
+  font-size: 14px;
+  height: 40px;
+  width: 160px;
+  box-shadow:
+    inset 1px 1px 0px rgba(255,255,255,0.25),
+    inset 0 5px 10px ,#dcc0a2,
+    inset 0 15px 10px -5px #b79c86,
+    0px 0px 5px rgba(0,0,0,0.75);
+  text-shadow:0px 1px 10px rgba(169,169,169,0.75);
+  margin: 20px 18px 20px 18px;
+}
+
+#gameLevelButton > button:hover, #congratsButton > button:hover, #newLevelButton > button:hover {
+  background-color: #8f1c10;
+  color: #ffffff;
+  box-shadow:
+    inset 1px 1px 0px rgba(255,255,255,0.25),
+    inset 0 0 6px #da3b2c,
+    inset 0 15px 10px -5px #dd4330,
+    0px 0px 5px rgba(0,0,0,0.75);
+}
+
+#hearthstoneLogo {
+  background-image: url(../images/HearthStoneLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 230px;
+  width: 550px;
+}
+
+.modalStartContent {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.modal-content, .level-content {
+  height: 300px;
+  width: 100%;
+  background-color: #1b2f4c;
+  border-top: 15px solid #f1b35c;
+  border-bottom: 15px solid #f1b35c;
+  box-shadow: inset -10px 0px 50px 3px rgba(255,255,255,0.20);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}

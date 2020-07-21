@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Match</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="modalStartOverlay">
+    <div class="modalStartContent">
+      <div id="hearthstoneLogo"></div>
+      <div id="titleBand">
+        <h1>MEMORY MATCH</h1>
+        <h3>CHOOSE GAME LEVEL</h3>
+        <div id="gameLevelButton">
+          <button id="easyLevel" data-level="9">EASY</button>
+          <button id="midLevel" data-level="16">MEDIUM</button>
+          <button id="hardLevel" data-level="30">HARD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay hidden">
+    <div class="modal-content">
+      <h3>WELL PLAYED!</h3>
+      <div id="congratsButton">
+        <button id="startNewButton">START NEW GAME</button>
+        <button id="chooseLevel">CHOOSE NEW LEVEL</button>
+        <button id="backToMain">MAIN PAGE</button>
+      </div>
+    </div>
+  </div>
+  <div class="level-overlay hidden">
+    <div class="level-content">
+      <h3>CHOOSE GAME LEVEL</h3>
+      <div id="newLevelButton">
+        <button id="newEasy" data-level="9">EASY</button>
+        <button id="newMid" data-level="16">MEDIUM</button>
+        <button id="newHard" data-level="30">HARD</button>
+        <button id="goBack">BACK</button>
+      </div>
+    </div>
+  </div>
+  <div class="gameContainer hidden">
+    <div class="rowGame">
+      <aside class="col-2 restart-button-position">
+        <div class="button-frame">
+          <div class="button-frame-middle">
+            <div class="button-dec-item">
+              <img class="ashesCardpack" src="assets/images/ashes_cardpack.png" alt="hearthstone ashes cardpack">
+            </div>
+            <div class="button-item">
+              <button class="restart" id="restart" type="button">RESTART</button>
+            </div>
+          </div>
+        </div>
+        <div class="asideElement">
+          <h3>Status</h3>
+        </div>
+        <div class="asideElement" id="gamePlayed">
+          <h3>Games Played</h3>
+        </div>
+        <div class="asideElement" id="gamePlayedNum">
+          <h3>0</h3>
+        </div>
+        <div class="asideElement" id="attempts">
+          <h3>Attempts</h3>
+        </div>
+        <div class="asideElement" id="attemptsNum">
+          <h3>0</h3>
+        </div>
+        <div class="asideElement" id="accuracy">
+          <h3>Accuracy</h3>
+        </div>
+        <div class="asideElement" id="accuracyNum">
+          <h3>0%</h3>
+        </div>
+      </aside>
+      <main class="col-10" id="gameCards"></main>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
